@@ -32,7 +32,10 @@ To run the documentation site locally:
 The site is automatically deployed to GitHub Pages when changes are pushed to the main branch. 
 
 
-Licensing & Ownership¶
+---
+
+## Licensing & Ownership
+
 This project exists for educational purposes only.
 
-All content is copyright Adobe Systems Incorporated.
+All content is copyright Adobe Systems Incorporated. 
