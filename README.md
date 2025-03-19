@@ -6,6 +6,14 @@ This repository hosts documentation for Adobe CEP (Common Extensibility Platform
 
 The documentation is hosted at: [https://ivg-design.github.io/cep](https://ivg-design.github.io/cep)
 
+## Documentation Structure
+
+- `/docs` - Main documentation directory
+  - `/docs/guide` - CEP guides and tutorials
+  - `/docs/reference` - Reference documentation
+  - `/docs/tools` - Tools documentation
+  - `/docs/css` - Custom styling
+
 ## Local Development
 
 To run the documentation site locally:
@@ -21,18 +29,9 @@ To run the documentation site locally:
    ```
 4. Open your browser at [http://localhost:8000](http://localhost:8000)
 
-## Structure
-
-- `/docs` - Contains all the documentation files
-  - `/docs/CEP Resources` - Original resource files
-  - `/docs/combined-toc.md` - Combined table of contents with all documentation sections
-
 ## Deployment
 
-The site is automatically deployed to GitHub Pages when changes are pushed to the main branch. 
-
-
----
+The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
 ## Licensing & Ownership
 
