@@ -9,16 +9,18 @@ This guide will walk you through the necessary steps to debug client-side code i
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
-1. [Prerequisites](#prerequisites)
-1. [Set the Debug Mode](#set-the-debug-mode)
-1. [Create a `.debug` File](#create-a-debug-file)
-1. [Write Contents for the `.debug` File](#write-contents-for-the-debug-file)
-1. [Debugging in Chrome](#debugging-in-chrome)
-1. [Troubleshooting common issues](#troubleshooting-common-issues)
-    1. [Getting a "not properly signed" alert](#getting-a-not-properly-signed-alert)
-    1. [Getting a blank debug console](#getting-a-blank-debug-console)
-1. [Next Steps](#next-steps)
-1. [Other Resources](#other-resources)
+- [Client-side debugging](#client-side-debugging)
+  - [Contents](#contents)
+  - [Prerequisites](#prerequisites)
+  - [Set the Debug Mode](#set-the-debug-mode)
+  - [Create a `.debug` File](#create-a-debug-file)
+  - [Write Contents for the `.debug` File](#write-contents-for-the-debug-file)
+  - [Debugging in Chrome](#debugging-in-chrome)
+  - [Troubleshooting common issues](#troubleshooting-common-issues)
+    - [Getting a "not properly signed" alert](#getting-a-not-properly-signed-alert)
+    - [Getting a blank debug console](#getting-a-blank-debug-console)
+  - [Next Steps](#next-steps)
+  - [Other Resources](#other-resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
