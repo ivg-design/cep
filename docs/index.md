@@ -25,4 +25,12 @@ For a complete overview of all documentation with detailed section links, check 
 
 ### Reference
 
-* [CEP 12 HTML Extension Cookbook](CEP%20Resources/CEP%2012%20HTML%20Extension%20Cookbook.md) - Comprehensive reference for CEP 12 HTML extensions 
+* [CEP 12 HTML Extension Cookbook](CEP%20Resources/CEP%2012%20HTML%20Extension%20Cookbook.md) - Comprehensive reference for CEP 12 HTML extensions
+
+---
+
+## Licensing & Ownership
+
+This project exists for educational purposes only.
+
+All content is copyright Adobe Systems Incorporated. 
