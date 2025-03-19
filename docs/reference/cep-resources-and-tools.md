@@ -5,63 +5,72 @@ description: Comprehensive collection of tools, documentation, and community res
 
 # CEP Resources and References
 
+A comprehensive collection of external resources, tools, and references for Adobe CEP development.
+
 ## Official Documentation
 
 ### Adobe CEP Resources
-- [CEP 12 HTML Extension Cookbook][cookbook] - Official documentation covering:
-  - Extension manifest details
-  - Scripting interfaces
-  - Host application integration
-  - Security guidelines
-  - Migration guides
-- [Getting Started Guide][getting-started] - Adobe's introductory guide
-- [Sample Extensions Repository][samples] - Official code examples
+- [CEP Resources Repository](https://github.com/Adobe-CEP/CEP-Resources) - Official Adobe repository containing:
+  - HTML Extension Cookbooks for all CEP versions
+  - Documentation and guides
+  - Tools and utilities
+  - Sample code
+- [Adobe-CEP GitHub Organization](https://github.com/Adobe-CEP) - Official source for:
+  - Sample extensions
+  - Development tools
+  - Documentation updates
 
 ### Development Tools
-- [ExtendScript Debugger for VS Code][debugger]
-  - Official Adobe extension
-  - Debugging capabilities for ExtendScript
-  - Integrated development environment
-- [ExtendScript API Reference][extendscript-docs]
-  - Community-maintained documentation
-  - Host application APIs
-  - ExtendScript language reference
+- [ExtendScript Debugger for VS Code](https://marketplace.visualstudio.com/items?itemName=Adobe.extendscript-debug)
+  - Official Adobe extension for VS Code
+  - Debug ExtendScript in modern IDE
+  - Support for all Adobe applications
+- [Types for Adobe](https://github.com/aenhancers/Types-for-Adobe)
+  - TypeScript definitions for Adobe applications
+  - IntelliSense support
+  - Community-maintained
 
 ## Development Frameworks
 
-### Bolt CEP
-Modern development framework featuring:
-- React, Vue, and Svelte support
-- TypeScript integration
-- Hot module reloading
-- Automated packaging
-See [Bolt CEP Documentation][bolt-cep] for details.
+### Modern Frameworks
+- [Bolt CEP](https://github.com/hyperbrew/bolt-cep)
+  - React, Vue, and Svelte support
+  - TypeScript integration
+  - Hot module reloading
+  - Production-ready tooling
+- [Brutalism](https://github.com/battleaxedotco/brutalism)
+  - Adobe-style UI components
+  - Theme-aware styling
+  - Vue.js integration
+- [Bombino](https://github.com/Inventsable/bombino)
+  - Quick-start templates
+  - Multiple framework options
+  - Integrated tooling
 
-### Brutalism
-Adobe-specific UI framework:
-- Pre-built UI components
-- Theme-aware styling
-- Rapid prototyping tools
-See [Brutalism Documentation][brutalism] for implementation.
+### Build Tools
+- [cep-bundler](https://github.com/adobe-extension-tools/cep-bundler)
+  - Zero-config bundling
+  - Parcel integration
+  - Live reload support
 
 ## Community Resources
 
 ### Forums and Discussion
-- [Adobe Creative Cloud Developer Forum][cc-forum]
-  - Official developer discussions
-  - Adobe staff participation
-  - Technical announcements
-- [Stack Overflow `[adobe-cep]`][stack-overflow]
+- [Adobe Creative Cloud Developer Forums](https://forums.creativeclouddeveloper.com)
+  - Official developer support
+  - Adobe staff interaction
+  - Community discussions
+- [Stack Overflow [adobe-cep] Tag](https://stackoverflow.com/questions/tagged/adobe-cep)
   - Technical Q&A
   - Code examples
-  - Troubleshooting help
+  - Problem solving
 
 ### Blogs and Tutorials
-- [Adobe Tech Blog][adobe-blog]
+- [Adobe Tech Blog - CEP Articles](https://medium.com/adobetech/tagged/cep)
   - Official tutorials
   - Best practices
   - Case studies
-- [Davide Barranca's Blog][davide-blog]
+- [Davide Barranca's Blog](https://www.davidebarranca.com)
   - Advanced CEP topics
   - Development tips
   - Performance optimization
@@ -69,54 +78,55 @@ See [Brutalism Documentation][brutalism] for implementation.
 ## Development Tools
 
 ### Extension Development
-- [ZXPSignCmd][zxp-cmd] - Official signing tool
-- [ExManCmd][exman] - Extension manager CLI
-- [Extension Builder][builder] - Development environment
+- [ZXPSignCmd](https://github.com/Adobe-CEP/CEP-Resources/tree/master/ZXPSignCMD)
+  - Official signing tool
+  - Certificate creation
+  - ZXP packaging
+- [ExManCmd](https://helpx.adobe.com/exchange/kb/downloading-extension-manager-command-line-tool.html)
+  - Command-line extension management
+  - Automated installation
+  - Enterprise deployment
 
 ### Debugging Tools
-- Chrome DevTools for panel debugging
-- ExtendScript Toolkit (Legacy)
-- Console logging utilities
+- [Chrome Remote Debugging](https://www.chromium.org/developers/how-tos/debugging-extensions/)
+  - Panel UI debugging
+  - Network inspection
+  - Console access
+- [VS Code ExtendScript Debugging](https://marketplace.visualstudio.com/items?itemName=Adobe.extendscript-debug)
+  - Breakpoint debugging
+  - Variable inspection
+  - Step-through execution
 
 ## Code Examples
 
 ### Official Examples
-- [Adobe CEP Examples][adobe-examples]
-- [Extension Samples][extension-samples]
-- [Scripting Samples][script-samples]
+- [Adobe CEP Samples](https://github.com/Adobe-CEP/Samples)
+  - Complete extension examples
+  - Best practices demonstrations
+  - Multiple host applications
+- [Getting Started Guides](https://github.com/Adobe-CEP/Getting-Started-guides)
+  - Step-by-step tutorials
+  - Basic to advanced topics
+  - Sample code
 
 ### Community Examples
-- [GitHub Topic: adobe-cep][github-cep]
-- [CodePen CEP Examples][codepen-cep]
-- [Community Extensions][community-extensions]
+- [GitHub Topic: adobe-cep](https://github.com/topics/adobe-cep)
+  - Open source extensions
+  - Community projects
+  - Learning resources
+- [Adobe Exchange](https://exchange.adobe.com)
+  - Published extensions
+  - Commercial examples
+  - Free tools
 
 ## Migration Resources
 
-### UXP Transition
-- [UXP Documentation][uxp-docs]
-- [Migration Guides][migration-guides]
-- [Compatibility Notes][compatibility]
-
-[cookbook]: ./html-extension-cookbook.md
-[getting-started]: ../guide/getting-started.md
-[samples]: https://github.com/Adobe-CEP/Samples
-[debugger]: https://marketplace.visualstudio.com/items?itemName=Adobe.extendscript-debug
-[extendscript-docs]: https://extendscript.docsforadobe.dev/
-[bolt-cep]: ../tools/bolt-cep.md
-[brutalism]: https://github.com/battleaxedotco/brutalism
-[cc-forum]: https://forums.creativeclouddeveloper.com
-[stack-overflow]: https://stackoverflow.com/questions/tagged/adobe-cep
-[adobe-blog]: https://medium.com/adobetech
-[davide-blog]: https://www.davidebarranca.com
-[zxp-cmd]: https://github.com/Adobe-CEP/CEP-Resources/tree/master/ZXPSignCMD
-[exman]: https://helpx.adobe.com/exchange/em_download_installer.html
-[builder]: https://github.com/Adobe-CEP/CEP-Resources
-[adobe-examples]: https://github.com/Adobe-CEP/Samples
-[extension-samples]: https://github.com/Adobe-CEP/CEP-Resources/tree/master/Samples
-[script-samples]: https://github.com/Adobe-CEP/CEP-Resources/tree/master/Scripts
-[github-cep]: https://github.com/topics/adobe-cep
-[codepen-cep]: https://codepen.io/tag/adobe-cep
-[community-extensions]: https://exchange.adobe.com
-[uxp-docs]: https://developer.adobe.com/photoshop/uxp/
-[migration-guides]: https://developer.adobe.com/photoshop/uxp/guides/migration/
-[compatibility]: https://developer.adobe.com/photoshop/uxp/guides/compatibility/ 
+### UXP Resources
+- [UXP Developer Documentation](https://developer.adobe.com/photoshop/uxp/)
+  - Future extension platform
+  - Migration guides
+  - API reference
+- [UXP Plugin Samples](https://github.com/AdobeDocs/uxp-photoshop-plugin-samples)
+  - Example implementations
+  - Best practices
+  - Modern patterns 

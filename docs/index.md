@@ -14,6 +14,7 @@ For a complete overview of all documentation with detailed section links, check 
 
 ### Guides
 
+* [Developing Adobe CEP Extensions](guide/developing-cep-extensions.md) - Comprehensive technical guide for CEP development
 * [Getting Started](guide/getting-started.md) - Quickly get started with CEP extension development
 * [Client Side Debugging](guide/debugging.md) - Learn how to debug your CEP extensions
 * [Exporting Files](guide/exporting-files.md) - How to export files from host applications
@@ -26,6 +27,7 @@ For a complete overview of all documentation with detailed section links, check 
 ### Reference
 
 * [CEP 12 HTML Extension Cookbook](reference/html-extension-cookbook.md) - Comprehensive reference for CEP 12 HTML extensions
+* [CEP Resources and Tools](reference/cep-resources-and-tools.md) - Collection of tools, documentation, and community resources
 
 ---
 
