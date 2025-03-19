@@ -52,6 +52,7 @@ nav:
   - Home: 'index.md'
   - Table of Contents: 'toc.md'
   - Guides:
+    - 'Developing Adobe CEP Extensions': 'guide/developing-cep-extensions.md'
     - 'Getting Started': 'guide/getting-started.md'
     - 'Client Side Debugging': 'guide/debugging.md'
     - 'Exporting Files': 'guide/exporting-files.md'
@@ -59,4 +60,5 @@ nav:
   - Tools:
     - 'Bolt CEP': 'tools/bolt-cep.md'
   - Reference:
-    - 'CEP 12 HTML Extension Cookbook': 'reference/html-extension-cookbook.md' 
+    - 'CEP 12 HTML Extension Cookbook': 'reference/html-extension-cookbook.md'
+    - 'CEP Resources and Tools': 'reference/cep-resources-and-tools.md' 
