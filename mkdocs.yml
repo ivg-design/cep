@@ -32,7 +32,7 @@ theme:
     repo: fontawesome/brands/github
 
 extra_css:
-  - stylesheets/extra.css
+  - css/custom.css
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -50,13 +50,13 @@ markdown_extensions:
 
 nav:
   - Home: 'index.md'
-  - Table of Contents: 'combined-toc.md'
+  - Table of Contents: 'toc.md'
   - Guides:
-    - 'Getting Started': 'CEP Resources/ADOBE CEP - Gettings Started .md'
-    - 'Client Side Debugging': 'CEP Resources/ADOBE CEP - Client Side Debugging.md'
-    - 'Exporting Files': 'CEP Resources/ADOBE CEP - Exporting files from the host app.md'
-    - 'Network Requests': 'CEP Resources/ADOBE CEP -Network requests and responses with Fetch.md'
+    - 'Getting Started': 'guide/getting-started.md'
+    - 'Client Side Debugging': 'guide/debugging.md'
+    - 'Exporting Files': 'guide/exporting-files.md'
+    - 'Network Requests': 'guide/network-requests.md'
   - Tools:
-    - 'Bolt CEP': 'CEP Resources/Bolt CEP.md'
+    - 'Bolt CEP': 'tools/bolt-cep.md'
   - Reference:
-    - 'CEP 12 HTML Extension Cookbook': 'CEP Resources/CEP 12 HTML Extension Cookbook.md' 
+    - 'CEP 12 HTML Extension Cookbook': 'reference/html-extension-cookbook.md' 
