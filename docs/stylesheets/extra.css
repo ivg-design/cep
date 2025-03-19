@@ -1,0 +1,50 @@
+/* Make list items more compact */
+.md-typeset ul li,
+.md-typeset ol li {
+  margin-bottom: 0.1em;
+}
+
+/* Reduce heading margins */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+/* Reduce paragraph margins */
+.md-typeset p {
+  margin-bottom: 0.6em;
+}
+
+/* Make TOC more compact */
+.md-nav__item {
+  margin-top: 0.125em;
+}
+
+/* Adjust spacing in tables of contents */
+.md-nav__list .md-nav__list {
+  margin-left: 0.4rem;
+  padding-left: 0.6rem;
+}
+
+/* Make general content more compact */
+.md-typeset {
+  line-height: 1.4;
+}
+
+/* Reduce code block padding */
+.md-typeset pre > code {
+  padding: 0.8em;
+}
+
+/* Reduce padding between navigation items */
+.md-nav__link {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+} 

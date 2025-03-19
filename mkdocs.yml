@@ -1,0 +1,62 @@
+site_name: Adobe CEP Documentation
+site_url: https://ivg-design.github.io/cep
+repo_url: https://github.com/ivg-design/cep
+repo_name: ivg-design/cep
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: 'index.md'
+  - Table of Contents: 'combined-toc.md'
+  - Guides:
+    - 'Getting Started': 'CEP Resources/ADOBE CEP - Gettings Started .md'
+    - 'Client Side Debugging': 'CEP Resources/ADOBE CEP - Client Side Debugging.md'
+    - 'Exporting Files': 'CEP Resources/ADOBE CEP - Exporting files from the host app.md'
+    - 'Network Requests': 'CEP Resources/ADOBE CEP -Network requests and responses with Fetch.md'
+  - Tools:
+    - 'Bolt CEP': 'CEP Resources/Bolt CEP.md'
+  - Reference:
+    - 'CEP 12 HTML Extension Cookbook': 'CEP Resources/CEP 12 HTML Extension Cookbook.md' 
