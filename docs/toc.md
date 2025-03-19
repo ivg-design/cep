@@ -1,5 +1,18 @@
 # Table Of Contents
 
+## [Developing Adobe CEP Extensions](guide/developing-cep-extensions.md)
+- [Development Setup](guide/developing-cep-extensions.md#1-development-setup)
+  - [Prerequisites](guide/developing-cep-extensions.md#prerequisites)
+  - [Folder Structure](guide/developing-cep-extensions.md#folder-structure)
+  - [manifest.xml Configuration](guide/developing-cep-extensions.md#manifestxml-configuration)
+  - [Installation & Configuration](guide/developing-cep-extensions.md#installation--configuration)
+- [Debugging CEP Extensions](guide/developing-cep-extensions.md#2-debugging-cep-extensions)
+- [Best Practices](guide/developing-cep-extensions.md#3-best-practices-for-efficient-cep-development)
+- [BOLT-CEP Template](guide/developing-cep-extensions.md#4-hyperbrew-bolt-cep-template)
+- [Alternative Frameworks](guide/developing-cep-extensions.md#5-alternative-cep-development-frameworks--tools)
+- [Advanced Topics](guide/developing-cep-extensions.md#6-advanced-topics)
+
+
 ## [Getting Started](guide/getting-started.md)
 - [Technology Used](guide/getting-started.md#technology-used)
 - [Prerequisites](guide/getting-started.md#prerequisites)
@@ -73,4 +86,12 @@
   - [Migration from CEP 10 to CEP 11](reference/html-extension-cookbook.md#migration-from-cep-10-to-cep-11)
   - [Migration from CEP 9 to CEP 10](reference/html-extension-cookbook.md#migration-from-cep-9-to-cep-10)
   - [Migration from CEP 8 to CEP 9](reference/html-extension-cookbook.md#migration-from-cep-8-to-cep-9)
-  - [NodeJS](reference/html-extension-cookbook.md#nodejs) 
+  - [NodeJS](reference/html-extension-cookbook.md#nodejs)
+
+## [Resources and References](reference/cep-resources-and-tools.md)
+- [Official Documentation](reference/cep-resources-and-tools.md#official-documentation)
+- [Development Frameworks](reference/cep-resources-and-tools.md#development-frameworks)
+- [Community Resources](reference/cep-resources-and-tools.md#community-resources)
+- [Development Tools](reference/cep-resources-and-tools.md#development-tools)
+- [Code Examples](reference/cep-resources-and-tools.md#code-examples)
+- [Migration Resources](reference/cep-resources-and-tools.md#migration-resources) 
