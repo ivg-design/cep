@@ -59,6 +59,7 @@ nav:
     - 'Network Requests': 'guide/network-requests.md'
   - Tools:
     - 'Bolt CEP': 'tools/bolt-cep.md'
+    - 'ExtendScript Debugger': 'tools/extendscript-debugger.md'
   - Reference:
     - 'CEP 12 HTML Extension Cookbook': 'reference/html-extension-cookbook.md'
     - 'CEP Resources and Tools': 'reference/cep-resources-and-tools.md' 

@@ -496,3 +496,16 @@ If you're experiencing issues building on your Apple Silicon Machine regarding t
 5. `src/js/lib` - Update this entire folder.
 6. `src/jsx/index.ts` - Check if any new properties have been added that don't exist in your config.
 7. `src/shared/universals.d.ts` - Check if any new properties have been added that don't exist in your config.
+
+---
+
+## Attribution
+
+Bolt CEP was created and is maintained by [Hyper Brew](https://hyperbrew.co/). The tool is open source and available under the MIT license.
+
+- **Creator**: [Hyper Brew](https://hyperbrew.co/)
+- **GitHub Repository**: [hyperbrew/bolt-cep](https://github.com/hyperbrew/bolt-cep)
+- **License**: [MIT](https://github.com/hyperbrew/bolt-cep/blob/master/LICENSE)
+- **Documentation**: [Official Documentation](https://hyperbrew.co/blog/bolt-cep-build-extensions-faster/)
+
+Special thanks to the Hyper Brew team for creating and maintaining this invaluable tool for the Adobe CEP development community.

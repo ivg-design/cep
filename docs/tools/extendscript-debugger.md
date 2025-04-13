@@ -627,4 +627,15 @@ There are currently two options:
 ## Resources
 
 - [Official VS Code Debugging Documentation](https://code.visualstudio.com/docs/editor/debugging)
-- [Extensions / Add-ons Development Forum](https://community.adobe.com/t5/extensibility/ct-p/ct-extensibility) 
+- [Extensions / Add-ons Development Forum](https://community.adobe.com/t5/extensibility/ct-p/ct-extensibility)
+
+## Attribution
+
+The ExtendScript Debugger extension for VS Code was created and is maintained by Adobe. This tool is an essential part of the modern Adobe ExtendScript development workflow.
+
+- **Creator**: Adobe Systems Incorporated
+- **Marketplace**: [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=Adobe.extendscript-debug)
+- **Documentation**: [Official Documentation](https://github.com/Adobe-CEP/CEP-Resources/tree/master/ExtendScript-Debugger)
+- **Support**: [Adobe Support](https://community.adobe.com/t5/adobe-developer-cloud/ct-p/ct-developer-cloud)
+
+Special thanks to the Adobe team for providing this crucial development tool that significantly improves the ExtendScript debugging experience. 

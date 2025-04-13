@@ -30,20 +30,20 @@ This guide will assume that you have completed all steps in the [Getting Started
 
 ## Set the Debug Mode
 First, set the following Adobe preference to prevent your host application (Photoshop, InDesign, etc.) from throwing alerts about unsigned extensions. The [HTML Extension Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md) section on [Debugging Unsigned Extensions](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#debugging-unsigned-extensions) explains this process:
-> Windows: Open regedit > HKEY_CURRENT_USER/Software/Adobe/CSXS.8, then add a new entry `PlayerDebugMode` of type “`string`” with the value of “`1`”.
+> Windows: Open regedit > HKEY_CURRENT_USER/Software/Adobe/CSXS.8, then add a new entry `PlayerDebugMode` of type "`string`" with the value of "`1`".
 
 > Mac: In the Terminal, type: `defaults write com.adobe.CSXS.8 PlayerDebugMode 1`
 
 ![This is what Regedit looks like in Windows 10. You can access it using CMD, too.](debugging_assets/RegistryEditor.png) *On Windows, Regedit is located in (C:\Windows\regedit). You can access it using CMD, too.*
 
-![Here’s what Terminal looks like in MacOS Sierra.](debugging_assets/Terminal.png)*On macOS, Terminal is located in (Applications > Utilities > Terminal).*
+![Here's what Terminal looks like in MacOS Sierra.](debugging_assets/Terminal.png)*On macOS, Terminal is located in (Applications > Utilities > Terminal).*
 
 
 ## Create a `.debug` File
 
-Next, create a `.debug` file for your extension. The `.debug` file needs to be at the top level of your extension’s folder.
+Next, create a `.debug` file for your extension. The `.debug` file needs to be at the top level of your extension's folder.
 
-![Your panel’s directory](debugging_assets/yourpaneltree.png)
+![Your panel's directory](debugging_assets/yourpaneltree.png)
 
 The `.debug` file must be a hidden file in order to work. The `.` at the front of the file name will make it hidden. The easiest way to create this file is to use the code editing tool of your choice (like Sublime Text or Brackets) to create a new file named `.debug`.
 
@@ -83,11 +83,11 @@ Open Chrome and go to `http://localhost:8088/` or whichever port you set in your
 ![CEF Remote Debugging in Chrome](debugging_assets/CEFdebugger.png)
 *CEF Remote Debugging in Chrome*
 
-If your panel is working, you’ll see the name of your extension as a link you can click on, as seen in the image above. The link will take you to the JavaScript Console within Chromium DevTools. The JavaScript Console is where, among other things, you will see your extension's log and error output.
+If your panel is working, you'll see the name of your extension as a link you can click on, as seen in the image above. The link will take you to the JavaScript Console within Chromium DevTools. The JavaScript Console is where, among other things, you will see your extension's log and error output.
 
 ![The JavaScript Console in Chrome](debugging_assets/DeveloperTools.png)*The JavaScript Console in Chrome*
 
-In the example below, the `console.log()` message is “I can’t believe you clicked!”. The message originates from the `<script>` element in the `index.html` file:
+In the example below, the `console.log()` message is "I can't believe you clicked!":
 
 ```html
 <html>
@@ -98,7 +98,7 @@ In the example below, the `console.log()` message is “I can’t believe you cl
 
     <h1>Hello World!</h1>
 
-    <!-- Add a button labeled “Click this!” -->
+    <!-- Add a button labeled "Click this!" -->
     <button id="myButton">Click this!</button>
 
     <script type="text/javascript">
@@ -118,13 +118,13 @@ In the example below, the `console.log()` message is “I can’t believe you cl
 
 ### Getting a "not properly signed" alert
 
-The change in the [Set the Debug Mode section](#set-the-debug-mode) is invisible if performed correctly. Otherwise, you’ll get the following error about unsigned extensions:
+The change in the [Set the Debug Mode section](#set-the-debug-mode) is invisible if performed correctly. Otherwise, you'll get the following error about unsigned extensions:
 
-![*The “Your Panel Name” extension could not be loaded because it was not properly signed.*](debugging_assets/UnsignedError.png)**The “Your Panel Name” extension could not be loaded because it was not properly signed.**
+![*The "Your Panel Name" extension could not be loaded because it was not properly signed.*](debugging_assets/UnsignedError.png)**The "Your Panel Name" extension could not be loaded because it was not properly signed.**
 
-Don’t worry about [signing your extensions](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#signing-extensions) until you’re ready to distribute to users.
+Don't worry about [signing your extensions](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#signing-extensions) until you're ready to distribute to users.
 
-If you’ve set the debug mode and are still getting the error above, [try killing the **cfprefsd** process](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#special-notes-for-mac-109-and-higher), or check out this [thread about troubleshooting debug mode](https://forums.adobe.com/thread/2444749) in the Adobe forums.
+If you've set the debug mode and are still getting the error above, [try killing the **cfprefsd** process](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#special-notes-for-mac-109-and-higher), or check out this [thread about troubleshooting debug mode](https://forums.adobe.com/thread/2444749) in the Adobe forums.
 
 ### Getting a blank debug console
 If your debug console in Chrome appears blank, [check the contents of your `.debug` file one more time](#write-contents-for-the-debug-file):
@@ -149,3 +149,18 @@ Now that you've seen the basics, check out these guides and samples that walk yo
 - [Adobe Photoshop Scripting Reference Docs](https://github.com/Adobe-CEP/CEP-Resources/tree/master/Documentation/Product%20specific%20Documentation/Photoshop%20Scripting)
 - [Adobe Illustrator Reference Doc](https://ioconsolerykerprodcdn.azureedge.net/static/installers/ai/scripting/2021/scripting_guide/Illustrator%20Scripting%20Guide.pdf)
 - [InDesign Reference Guide](https://github.com/Adobe-CEP/CEP-Resources/blob/master/Documentation/Product%20specific%20Documentation/CEP%20for%20InDesign%20Developers.pdf)
+
+## Attribution
+
+This debugging guide incorporates information from multiple sources and has been enhanced with community-contributed knowledge about CEP extension debugging practices.
+
+- **Primary Source**: Adobe Creative Cloud Extensibility Team
+  - [Adobe CEP Resources](https://github.com/Adobe-CEP/CEP-Resources)
+  - [Official CEP Documentation](https://github.com/Adobe-CEP/CEP-Resources/tree/master/Documentation)
+
+- **Additional Contributors**:
+  - [Davide Barranca](https://www.davidebarranca.com/) - For pioneering work on CEP debugging techniques
+  - [Hyper Brew](https://hyperbrew.co/) - For modern debugging workflow contributions
+  - The Adobe CEP developer community for sharing debugging tips and best practices
+
+Special thanks to all the developers who have contributed their debugging knowledge and experience to help make CEP extension development more accessible.

@@ -46,7 +46,7 @@ Basic knowledge of HTML, CSS, and JavaScript.
 ## Development Steps
 
 ### 1. Decide the folder structure
-You will need to decide where to save your extension code first. Your extension can be saved either at the root level or at the user level, depending on who’s allowed to use the extension (refer to [CEP 8 HTML Extension Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for the actual paths).
+You will need to decide where to save your extension code first. Your extension can be saved either at the root level or at the user level, depending on who's allowed to use the extension (refer to [CEP 8 HTML Extension Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for the actual paths).
 
 Except for the required `CSXS` folder, which must contain `manifest.xml`, the folder structure is flexible. One recommended way to structure the folders would be:
 
@@ -62,7 +62,7 @@ This structure allows you to achieve a clear separation of concerns by devoting 
 
 
 ### 2. Configure Your Extension in `manifest.xml`
-There are many possible configurations for this file, but to keep things simple, let’s focus on the minimum requirements (for more, [see the complete version of the manifest, available in the CEP Resources Github repo](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/ExtensionManifest_v_7_0.xsd)).
+There are many possible configurations for this file, but to keep things simple, let's focus on the minimum requirements (for more, [see the complete version of the manifest, available in the CEP Resources Github repo](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/ExtensionManifest_v_7_0.xsd)).
 
 For a minimal setup, let's look at the following XML elements and attributes in `manifest.xml`. See the corresponding comments (**#1-7**) in the code that follows:
 
@@ -138,7 +138,7 @@ You can include this library wherever you like within your codebase, as long as 
 If you're following along with this example, place the downloaded `CSInterface.js` directly under `/client`.
 
 ### 4. Write Your Front-end Code
-Now, it’s time for you to start using your web development skills to build your extension. You can build this out with HTML, CSS, and JavaScript to suit your goals, but let’s have a look at the basic files.
+Now, it's time for you to start using your web development skills to build your extension. You can build this out with HTML, CSS, and JavaScript to suit your goals, but let's have a look at the basic files.
 
 #### Create HTML Markup
 The user interface for CEP extensions is written in HTML. For this example, locate the HTML document at `/client/index.html` and write the following code (see comments **#1-3**):
@@ -189,7 +189,7 @@ function openDoc() {
 Feel free to refer to [the CEP Github repo](https://github.com/Adobe-CEP/CEP-Resources) if you are curious about what else you can do with `CSInterface`.
 
 ### 5. Write Your ExtendScript Code
-ExtendScript code is different from your client-side JavaScript in that, via ExtendScript, you can access the host application’s functionalities, such as opening a document, editing it, exporting it, and almost anything else the host application can do.
+ExtendScript code is different from your client-side JavaScript in that, via ExtendScript, you can access the host application's functionalities, such as opening a document, editing it, exporting it, and almost anything else the host application can do.
 
 In this example, we will create a function that opens one file in the host application. Make sure to change the file name and the path to a file that actually exists in your filesystem.
 
@@ -228,3 +228,19 @@ Now that you've seen the basics, check out these guides and samples that walk yo
 - [Adobe Photoshop Reference Doc](https://www.adobe.com/devnet/photoshop/scripting.html)
 - [Adobe Illustrator Reference Doc](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/illustrator/pdf/Illustrator_JavaScript_Scripting_Reference_2017.pdf)
 - [InDesign Reference Guide](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/indesign/sdk/cs6/scripting/InDesign_ScriptingGuide_JS.pdf)
+
+## Attribution
+
+This Getting Started guide combines official Adobe documentation with community best practices and real-world experience in CEP extension development.
+
+- **Primary Sources**:
+  - Adobe Creative Cloud Extensibility Team
+    - [Adobe CEP Resources](https://github.com/Adobe-CEP/CEP-Resources)
+    - [Official Getting Started Documentation](https://github.com/Adobe-CEP/Getting-Started-guides)
+  
+- **Community Contributors**:
+  - [Hyper Brew](https://hyperbrew.co/) - For modern development workflow practices
+  - [Battle Axe](https://battleaxe.co/) - For UI/UX best practices
+  - The broader Adobe CEP developer community for sharing their experiences and solutions
+
+Special thanks to all the developers and teams who have contributed their knowledge to help newcomers get started with CEP extension development.

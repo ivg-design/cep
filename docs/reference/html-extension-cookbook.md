@@ -430,7 +430,7 @@ Staring with macOS 10.9, Apple introduced a caching mechanism for plist files. Y
 CEP supports remote debugging for HTML extensions from 5.0.
 
 
- - Create a “.debug” file to the extension root directory such as `Test_Extension\.debug`. The .debug file contains remote debug ports. Developers must create this file and use valid debug ports because both remote debugging and dev tools are based on it.
+ - Create a " .debug" file to the extension root directory such as `Test_Extension\.debug`. The .debug file contains remote debug ports. Developers must create this file and use valid debug ports because both remote debugging and dev tools are based on it.
  - ".debug" file name is special for both Windows and macOS platforms, it has to be created via command line. 
 	 - On Windows, use "copy con .debug" and "Ctrl+Z" to create an empty file.
 	 - On macOS, use "touch .debug" to create an empty file.
@@ -969,11 +969,11 @@ One thing needs to be mentioned here is both named and anonymous callback functi
 ```
 function callback(event)
 {
-    console.log(“type=” + event.type + “, data=” + event.data);
+    console.log(type= + event.type + , data= + event.data);
 }
 	
 var csInterface = new CSInterface();
-csInterface.addEventListener(“com.adobe.cep.test”, callback); //invoke the function
+csInterface.addEventListener(com.adobe.cep.test, callback); //invoke the function
 ```
 
 
@@ -983,9 +983,9 @@ csInterface.addEventListener(“com.adobe.cep.test”, callback); //invoke the f
 
 ```
 var csInterface = new CSInterface();
-csInterface.addEventListener(“com.adobe.cep.test”, function (event)
+csInterface.addEventListener(com.adobe.cep.test, function (event)
 {
-     console.log(“type=” + event.type + “, data=” + event.data);
+     console.log(type= + event.type + , data= + event.data);
 }
 ); // Anonymous function is the second parameter
 ```
@@ -1000,10 +1000,10 @@ Here is an example on how to use it.
 
 ``` 
 var csInterface = new CSInterface();
-csInterface.addEventListener(“com.adobe.cep.test”, function (event)
+csInterface.addEventListener(com.adobe.cep.test, function (event)
 {
      var obj = event.data;
-     console.log(“type=” + event.type + “, data.property1=” + obj.property1 + “, data.property2=” + obj.property2);
+     console.log(type= + event.type + , data.property1= + obj.property1 + , data.property2= + obj.property2);
 }
 ); // Anonymous function is the second parameter
 ```
@@ -1090,7 +1090,7 @@ Then call CSInterface.addEventListener with event type you want to listen and th
 
 ```
 var csInterface = new CSInterface();
-csInterface.addEventListener(“com.adobe.cep.test”, callback);
+csInterface.addEventListener("com.adobe.cep.test", callback);
 ```
 
 
@@ -2195,9 +2195,9 @@ On macOS, scroll bars of panel are hidden by OS (since Lion by design). It can b
 
  1. Click the Apple menu at the top-left of the screen, then select System Preferences.
  
- 2. Next, select the General preferences pane; it’s the very first one, up at the top.
+ 2. Next, select the General preferences pane; it's the very first one, up at the top.
  
- 3. Under the “Show scroll bars” heading, you’ll find three options: “Automatically based on input device,” “When scrolling,” and “Always.” Chose "Always."
+ 3. Under the "Show scroll bars" heading, you'll find three options: "Automatically based on input device," "When scrolling," and "Always." Chose "Always."
 
 
 ### Invisible HTML Extensions
@@ -2826,7 +2826,7 @@ Here are some JavaScript which had been used successfully
 	 - Please refer to Node.js section about resolving symbol conflicts.
  - spin.js - http://fgnass.github.com/spin.js/
  - Modernizr - http://modernizr.com/
-	 - Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.
+	 - Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user's browser.
 
 
 ### NPAPI plug-ins
@@ -3008,3 +3008,16 @@ Developers can use the following forums and github repositories to ask questions
 
 
 If you like to contribute for extension development, please raise your PR at https://github.com/Adobe-CEP 
+
+---
+
+## Attribution
+
+The CEP 12 HTML Extension Cookbook is part of the official Adobe CEP documentation and resources. This comprehensive guide was created and is maintained by Adobe's Creative Cloud Extensibility team.
+
+- **Creator**: Adobe Creative Cloud Extensibility Team
+- **Repository**: [Adobe-CEP/CEP-Resources](https://github.com/Adobe-CEP/CEP-Resources)
+- **Documentation**: [Official CEP Resources](https://github.com/Adobe-CEP/CEP-Resources/tree/master/Documentation/Product%20specific%20Documentation/CEP%2012%20HTML%20Extension%20Cookbook)
+- **Support**: [Adobe CEP Forum](https://community.adobe.com/t5/creative-cloud-extensibility/bd-p/creative-cloud-extensibility)
+
+Special thanks to the Adobe Creative Cloud Extensibility team for providing and maintaining this essential documentation that helps developers create robust CEP extensions.
